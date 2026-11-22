@@ -22,6 +22,24 @@ https://raw.githubusercontent.com/Jiang060202/benben-sub/main/sub.txt
 
 V2Box 里：订阅 → 添加订阅 → 粘贴链接 → 更新订阅。
 
+## 分组订阅（一次只导一小批）
+
+5000 个节点分成 100 组，每组 50 个。嫌一次导 5000 个太多，就导一组，测完再换下一组。
+
+分组链接格式（001 到 100）：
+
+```
+https://cdn.jsdelivr.net/gh/Jiang060202/benben-sub@main/sub-001.txt
+```
+
+也可以直接打开展示页，点复制、翻页：
+
+```
+https://jiang060202.github.io/benben-sub/
+```
+
+（GitHub Pages 在国内打不开，看页面要开着节点；订阅链接本身走 jsDelivr，国内能用。）
+
 ## 说明
 
 - 来源是 24 个公开收集仓库（GitHub 上别人分享的免费配置），这里每小时汇总一次。
@@ -35,6 +53,7 @@ V2Box 里：订阅 → 添加订阅 → 粘贴链接 → 更新订阅。
 
 - `collect.py` 收集脚本（只用 Python 标准库）
 - `.github/workflows/update.yml` 每小时自动跑
-- `sub.txt` 订阅（base64）
+- `sub.txt` 订阅（base64，5000 条）
 - `sub_plain.txt` 明文节点列表
-- `stats.json` 统计（更新时间、各协议数量）
+- `sub-001.txt` … `sub-100.txt` 分组订阅（每组 50 条）
+- `stats.json` 统计（更新时间、各协议数量、分组列表）
