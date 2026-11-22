@@ -7,11 +7,14 @@
 输出：
   sub.txt        订阅（base64，V2Box 直接导入）
   sub_plain.txt  明文节点列表（一行一个链接，方便检查）
-  stats.json     统计（更新时间、各协议数量、各来源新增数）
+  stats.json     统计（更新时间、各协议数量、各来源新增数、分组列表）
+  sub-001.txt …  分组订阅：每 CHUNK_SIZE 条一组，方便一次只导入一小批
 """
 
 import base64
+import glob
 import json
+import os
 import re
 import time
 import urllib.error
@@ -50,6 +53,9 @@ SOURCES = [
 
 # 最多保留多少条，避免订阅过大导致客户端卡顿
 MAX_LINKS = 5000
+
+# 分组：每组多少条，方便一次只导入一小批
+CHUNK_SIZE = 50
 
 # 单个来源最多贡献多少条，免得某一个巨型来源把订阅挤满
 PER_SOURCE_MAX = 800
@@ -160,15 +166,31 @@ def main():
         f.write(sub_b64)
     with open("sub_plain.txt", "w", encoding="utf-8") as f:
         f.write(body + "\n")
+
+    # 分组订阅：每 CHUNK_SIZE 条一组，生成 sub-001.txt……，页面上分页展示
+    # 先删掉上次剩下的旧分组，免得总数变少时多出过期文件
+    for old in glob.glob("sub-[0-9]*.txt"):
+        os.remove(old)
+    chunks = []
+    for n in range(0, len(all_links), CHUNK_SIZE):
+        part = all_links[n:n + CHUNK_SIZE]
+        idx = n // CHUNK_SIZE + 1
+        fname = f"sub-{idx:03d}.txt"
+        with open(fname, "w", encoding="utf-8") as f:
+            f.write(base64.b64encode("\n".join(part).encode("utf-8")).decode("ascii"))
+        chunks.append({"id": idx, "file": fname, "count": len(part)})
+
     stats = {
         "updated_utc": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
         "total": len(all_links),
         "by_protocol": dict(Counter(proto(u) for u in all_links)),
         "per_source_new": per_source,
+        "chunk_size": CHUNK_SIZE,
+        "chunks": chunks,
     }
     with open("stats.json", "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
-    print("TOTAL:", len(all_links), dict(Counter(proto(u) for u in all_links)))
+    print("TOTAL:", len(all_links), dict(Counter(proto(u) for u in all_links)), "CHUNKS:", len(chunks), "x", CHUNK_SIZE)
 
 
 if __name__ == "__main__":
