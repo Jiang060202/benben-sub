@@ -1,23 +1,24 @@
 {
-  "updated_utc": "2026-11-21 23:57:19",
+  "updated_utc": "2026-11-22 00:09:32",
   "total": 5000,
   "by_protocol": {
-    "vless": 3033,
-    "trojan": 509,
+    "vless": 3114,
+    "trojan": 425,
     "ss": 600,
     "vmess": 500,
     "hysteria2": 300,
-    "hysteria": 14,
-    "ssr": 3,
-    "socks": 41
+    "tuic": 1,
+    "hysteria": 16,
+    "ssr": 2,
+    "socks": 42
   },
   "per_source_new": {
     "1": 800,
     "2": 800,
     "3": 800,
     "4": 319,
-    "5": 153,
-    "6": 29,
+    "5": 150,
+    "6": 28,
     "7": 232,
     "8": 222,
     "9": 800,
@@ -25,16 +26,519 @@
     "11": 389,
     "12": 800,
     "13": 800,
-    "14": 394,
-    "15": 10,
-    "16": 221,
-    "17": 597,
+    "14": 393,
+    "15": 9,
+    "16": 222,
+    "17": 598,
     "18": 800,
     "19": 800,
     "20": 800,
     "21": 180,
-    "22": 190,
-    "23": 566,
+    "22": 156,
+    "23": 567,
     "24": 225
-  }
+  },
+  "chunk_size": 50,
+  "chunks": [
+    {
+      "id": 1,
+      "file": "sub-001.txt",
+      "count": 50
+    },
+    {
+      "id": 2,
+      "file": "sub-002.txt",
+      "count": 50
+    },
+    {
+      "id": 3,
+      "file": "sub-003.txt",
+      "count": 50
+    },
+    {
+      "id": 4,
+      "file": "sub-004.txt",
+      "count": 50
+    },
+    {
+      "id": 5,
+      "file": "sub-005.txt",
+      "count": 50
+    },
+    {
+      "id": 6,
+      "file": "sub-006.txt",
+      "count": 50
+    },
+    {
+      "id": 7,
+      "file": "sub-007.txt",
+      "count": 50
+    },
+    {
+      "id": 8,
+      "file": "sub-008.txt",
+      "count": 50
+    },
+    {
+      "id": 9,
+      "file": "sub-009.txt",
+      "count": 50
+    },
+    {
+      "id": 10,
+      "file": "sub-010.txt",
+      "count": 50
+    },
+    {
+      "id": 11,
+      "file": "sub-011.txt",
+      "count": 50
+    },
+    {
+      "id": 12,
+      "file": "sub-012.txt",
+      "count": 50
+    },
+    {
+      "id": 13,
+      "file": "sub-013.txt",
+      "count": 50
+    },
+    {
+      "id": 14,
+      "file": "sub-014.txt",
+      "count": 50
+    },
+    {
+      "id": 15,
+      "file": "sub-015.txt",
+      "count": 50
+    },
+    {
+      "id": 16,
+      "file": "sub-016.txt",
+      "count": 50
+    },
+    {
+      "id": 17,
+      "file": "sub-017.txt",
+      "count": 50
+    },
+    {
+      "id": 18,
+      "file": "sub-018.txt",
+      "count": 50
+    },
+    {
+      "id": 19,
+      "file": "sub-019.txt",
+      "count": 50
+    },
+    {
+      "id": 20,
+      "file": "sub-020.txt",
+      "count": 50
+    },
+    {
+      "id": 21,
+      "file": "sub-021.txt",
+      "count": 50
+    },
+    {
+      "id": 22,
+      "file": "sub-022.txt",
+      "count": 50
+    },
+    {
+      "id": 23,
+      "file": "sub-023.txt",
+      "count": 50
+    },
+    {
+      "id": 24,
+      "file": "sub-024.txt",
+      "count": 50
+    },
+    {
+      "id": 25,
+      "file": "sub-025.txt",
+      "count": 50
+    },
+    {
+      "id": 26,
+      "file": "sub-026.txt",
+      "count": 50
+    },
+    {
+      "id": 27,
+      "file": "sub-027.txt",
+      "count": 50
+    },
+    {
+      "id": 28,
+      "file": "sub-028.txt",
+      "count": 50
+    },
+    {
+      "id": 29,
+      "file": "sub-029.txt",
+      "count": 50
+    },
+    {
+      "id": 30,
+      "file": "sub-030.txt",
+      "count": 50
+    },
+    {
+      "id": 31,
+      "file": "sub-031.txt",
+      "count": 50
+    },
+    {
+      "id": 32,
+      "file": "sub-032.txt",
+      "count": 50
+    },
+    {
+      "id": 33,
+      "file": "sub-033.txt",
+      "count": 50
+    },
+    {
+      "id": 34,
+      "file": "sub-034.txt",
+      "count": 50
+    },
+    {
+      "id": 35,
+      "file": "sub-035.txt",
+      "count": 50
+    },
+    {
+      "id": 36,
+      "file": "sub-036.txt",
+      "count": 50
+    },
+    {
+      "id": 37,
+      "file": "sub-037.txt",
+      "count": 50
+    },
+    {
+      "id": 38,
+      "file": "sub-038.txt",
+      "count": 50
+    },
+    {
+      "id": 39,
+      "file": "sub-039.txt",
+      "count": 50
+    },
+    {
+      "id": 40,
+      "file": "sub-040.txt",
+      "count": 50
+    },
+    {
+      "id": 41,
+      "file": "sub-041.txt",
+      "count": 50
+    },
+    {
+      "id": 42,
+      "file": "sub-042.txt",
+      "count": 50
+    },
+    {
+      "id": 43,
+      "file": "sub-043.txt",
+      "count": 50
+    },
+    {
+      "id": 44,
+      "file": "sub-044.txt",
+      "count": 50
+    },
+    {
+      "id": 45,
+      "file": "sub-045.txt",
+      "count": 50
+    },
+    {
+      "id": 46,
+      "file": "sub-046.txt",
+      "count": 50
+    },
+    {
+      "id": 47,
+      "file": "sub-047.txt",
+      "count": 50
+    },
+    {
+      "id": 48,
+      "file": "sub-048.txt",
+      "count": 50
+    },
+    {
+      "id": 49,
+      "file": "sub-049.txt",
+      "count": 50
+    },
+    {
+      "id": 50,
+      "file": "sub-050.txt",
+      "count": 50
+    },
+    {
+      "id": 51,
+      "file": "sub-051.txt",
+      "count": 50
+    },
+    {
+      "id": 52,
+      "file": "sub-052.txt",
+      "count": 50
+    },
+    {
+      "id": 53,
+      "file": "sub-053.txt",
+      "count": 50
+    },
+    {
+      "id": 54,
+      "file": "sub-054.txt",
+      "count": 50
+    },
+    {
+      "id": 55,
+      "file": "sub-055.txt",
+      "count": 50
+    },
+    {
+      "id": 56,
+      "file": "sub-056.txt",
+      "count": 50
+    },
+    {
+      "id": 57,
+      "file": "sub-057.txt",
+      "count": 50
+    },
+    {
+      "id": 58,
+      "file": "sub-058.txt",
+      "count": 50
+    },
+    {
+      "id": 59,
+      "file": "sub-059.txt",
+      "count": 50
+    },
+    {
+      "id": 60,
+      "file": "sub-060.txt",
+      "count": 50
+    },
+    {
+      "id": 61,
+      "file": "sub-061.txt",
+      "count": 50
+    },
+    {
+      "id": 62,
+      "file": "sub-062.txt",
+      "count": 50
+    },
+    {
+      "id": 63,
+      "file": "sub-063.txt",
+      "count": 50
+    },
+    {
+      "id": 64,
+      "file": "sub-064.txt",
+      "count": 50
+    },
+    {
+      "id": 65,
+      "file": "sub-065.txt",
+      "count": 50
+    },
+    {
+      "id": 66,
+      "file": "sub-066.txt",
+      "count": 50
+    },
+    {
+      "id": 67,
+      "file": "sub-067.txt",
+      "count": 50
+    },
+    {
+      "id": 68,
+      "file": "sub-068.txt",
+      "count": 50
+    },
+    {
+      "id": 69,
+      "file": "sub-069.txt",
+      "count": 50
+    },
+    {
+      "id": 70,
+      "file": "sub-070.txt",
+      "count": 50
+    },
+    {
+      "id": 71,
+      "file": "sub-071.txt",
+      "count": 50
+    },
+    {
+      "id": 72,
+      "file": "sub-072.txt",
+      "count": 50
+    },
+    {
+      "id": 73,
+      "file": "sub-073.txt",
+      "count": 50
+    },
+    {
+      "id": 74,
+      "file": "sub-074.txt",
+      "count": 50
+    },
+    {
+      "id": 75,
+      "file": "sub-075.txt",
+      "count": 50
+    },
+    {
+      "id": 76,
+      "file": "sub-076.txt",
+      "count": 50
+    },
+    {
+      "id": 77,
+      "file": "sub-077.txt",
+      "count": 50
+    },
+    {
+      "id": 78,
+      "file": "sub-078.txt",
+      "count": 50
+    },
+    {
+      "id": 79,
+      "file": "sub-079.txt",
+      "count": 50
+    },
+    {
+      "id": 80,
+      "file": "sub-080.txt",
+      "count": 50
+    },
+    {
+      "id": 81,
+      "file": "sub-081.txt",
+      "count": 50
+    },
+    {
+      "id": 82,
+      "file": "sub-082.txt",
+      "count": 50
+    },
+    {
+      "id": 83,
+      "file": "sub-083.txt",
+      "count": 50
+    },
+    {
+      "id": 84,
+      "file": "sub-084.txt",
+      "count": 50
+    },
+    {
+      "id": 85,
+      "file": "sub-085.txt",
+      "count": 50
+    },
+    {
+      "id": 86,
+      "file": "sub-086.txt",
+      "count": 50
+    },
+    {
+      "id": 87,
+      "file": "sub-087.txt",
+      "count": 50
+    },
+    {
+      "id": 88,
+      "file": "sub-088.txt",
+      "count": 50
+    },
+    {
+      "id": 89,
+      "file": "sub-089.txt",
+      "count": 50
+    },
+    {
+      "id": 90,
+      "file": "sub-090.txt",
+      "count": 50
+    },
+    {
+      "id": 91,
+      "file": "sub-091.txt",
+      "count": 50
+    },
+    {
+      "id": 92,
+      "file": "sub-092.txt",
+      "count": 50
+    },
+    {
+      "id": 93,
+      "file": "sub-093.txt",
+      "count": 50
+    },
+    {
+      "id": 94,
+      "file": "sub-094.txt",
+      "count": 50
+    },
+    {
+      "id": 95,
+      "file": "sub-095.txt",
+      "count": 50
+    },
+    {
+      "id": 96,
+      "file": "sub-096.txt",
+      "count": 50
+    },
+    {
+      "id": 97,
+      "file": "sub-097.txt",
+      "count": 50
+    },
+    {
+      "id": 98,
+      "file": "sub-098.txt",
+      "count": 50
+    },
+    {
+      "id": 99,
+      "file": "sub-099.txt",
+      "count": 50
+    },
+    {
+      "id": 100,
+      "file": "sub-100.txt",
+      "count": 50
+    }
+  ]
 }
